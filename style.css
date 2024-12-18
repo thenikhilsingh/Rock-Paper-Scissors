@@ -2,3 +2,92 @@
     text-align: center;
     font-size: 65px;
 }
+
+#gesturesCont{
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 40px;
+}
+
+.gestures{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.gestures img{
+    border-radius: 15px;
+}
+
+#rock{
+    padding-right: 85px;
+    background-color: white;
+}
+
+#gameResultCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 25px;
+}
+
+#gameResult{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 60%;
+    height: 15vh;
+    font-size: 35px;
+   text-align: center;
+   padding-top: 40px;
+}
+
+#scoreboard{
+    border: 2px solid black;
+    width: 30%;
+    height: 24vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.yourScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yourScore h2{
+    margin: 2px;
+}
+
+.computerScore h2{
+    margin: 2px;
+}
+
+.computerScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#yourScorePoints{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    font-size: 60px;
+    text-align:center;
+}
+
+#computerScorePoints{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    font-size: 60px;
+    text-align:center;
+}
