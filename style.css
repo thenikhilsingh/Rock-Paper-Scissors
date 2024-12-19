@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #gameName{
     text-align: center;
     font-size: 65px;
@@ -7,20 +13,30 @@
 display: flex;
 justify-content: center;
 align-items: center;
-column-gap: 40px;
+gap: 80px;
 }
 
-.gestures{
-    border: 2px solid black;
-    border-radius: 15px;
-}
 .gestures img{
     border-radius: 15px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: all 0.25s ease;
 }
 
-#rock{
-    padding-right: 85px;
-    background-color: white;
+.hoverbox{
+    background-color: rgba(83, 81, 81, 0.25);
+    border-radius: 15px;
+}
+
+.gestures img:hover{
+    /* transform: scale(1.05); */
+    opacity: 0.25;
+}
+
+.hoverbox:active{
+    background-color: whitesmoke;
 }
 
 #gameResultCont{
@@ -29,7 +45,7 @@ column-gap: 40px;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    column-gap: 25px;
+    gap: 25px;
 }
 
 #gameResult{
@@ -38,8 +54,9 @@ column-gap: 40px;
     width: 60%;
     height: 15vh;
     font-size: 35px;
-   text-align: center;
-   padding-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #scoreboard{
